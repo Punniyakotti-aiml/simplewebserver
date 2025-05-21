@@ -102,7 +102,8 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![Screenshot 2025-05-16 142246](https://github.com/user-attachments/assets/92196393-7191-4092-9372-9123a24637fd)
+![exp1](https://github.com/user-attachments/assets/379ca99b-580c-43fe-bea8-131bac84d716)
+
 ![Screenshot 2025-05-16 142041](https://github.com/user-attachments/assets/350115bf-b70f-4cf1-a128-2fb1b4e65ec9)
 
 
