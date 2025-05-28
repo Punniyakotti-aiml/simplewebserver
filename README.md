@@ -39,51 +39,21 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Time Table</title>
+    <title>TCP/IP Protocol Suite</title>
 </head>
 <body>
-
-    <h2>Weekly Timetable </h2>
-    <table border="1">
-        <tr>
-            <th>Day</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-        <tr>
-            <td>8:00-10:00</td>
-            <td>Web Development</td>
-            <td>Data Science</td>
-            <td>Artificial Intelligence</td>
-            <td>Quantitative Ability</td>
-            <td>Linear Algebra</td>
-        </tr>
-        <tr>
-            <td>10:00-12:00</td>
-            <td>Advance C programming</td>
-            <td>Maths for AI</td>
-            <td>Artificial Intelligence</td>
-            <td>Reasoning Ability</td>
-            <td>Linear Algebra</td>
-        </tr>
-        <tr>
-            <td>1:00-3:00</td>
-            <td>Web Development</td>
-            <td>Data Science</td>
-            <td>Machine Learning</td>
-            <td>Probability</td>
-            <td>Physics</td>
-        </tr>
-    </table>
-
+    <h1>Protocols in the TCP/IP Protocol Suite</h1>
+    <ul>
+        <li>Application Layer: HTTP, FTP, SMTP, DNS, Telnet, SNMP</li>
+        <li>Transport Layer: TCP, UDP</li>
+        <li>Internet Layer: IP, ICMP, IGMP, ARP</li>
+        <li>Network Access Layer: Ethernet, Wi-Fi, PPP</li>
+    </ul>
 </body>
 </html>
-
 
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -93,17 +63,17 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',80)
+server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![exp1](https://github.com/user-attachments/assets/379ca99b-580c-43fe-bea8-131bac84d716)
 
-![Screenshot 2025-05-16 142041](https://github.com/user-attachments/assets/350115bf-b70f-4cf1-a128-2fb1b4e65ec9)
+![Screenshot (55)](https://github.com/user-attachments/assets/dcde8f31-44fa-468d-8e9c-f11a6a8e2694)
 
+![Screenshot (56)](https://github.com/user-attachments/assets/1902ae96-5680-4a3a-9dfb-d26cb197b98c)
 
 
 ## RESULT:
